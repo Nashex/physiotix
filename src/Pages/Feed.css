@@ -1,0 +1,48 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.feed {
+   -ms-overflow-style: none; 
+   scrollbar-width: none;
+}
+
+.feed__header {
+    position: sticky;
+    top: 0;
+    background-color: var(--physiotix-background);
+    border: 2px solid var(--physiotix-accent);
+    border-left: 1px solid var(--physiotix-background);
+    border-right: 1px solid var(--physiotix-background);
+    box-shadow: 2px 2px 2px 2px var(--physiotix-accent);
+    padding: 15px 20px;
+    height: 35px;
+    z-index: 100;
+}
+
+.feed__header > h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.feed__posts {
+    flex: 1;
+}
+
+.feed__messageBox {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    border: 1px solid var(--physiotix-accent);
+    /* border-top: 10px solid var(--physiotix-accent); */
+    border-bottom: 2px solid var(--physiotix-accent);
+    z-index: 100;
+}
